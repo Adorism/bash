@@ -1,16 +1,10 @@
+// module.exports = process.stdin.on("data", (data) => {
+//   const cmd = data.toString().trim();
 
-process.stdout.write("prompt >");
-module.exports = process.stdin.on("data", (data) => {
-    const cmd = data.toString().trim();
+//   // process.stdout.write(process.cwd());
 
-    if (cmd === "pwd") {
-      process.stdout.write(process.cwd());
-    } else {
-      process.stdout.write("You typed: " + cmd);
-    }
+//   process.stdout.write("\nprompt > ");
+// });
 
-    process.stdout.write("\nprompt > ");
-  });
-
-
-
+process.stdout.write(process.cwd());
+process.stdout.write("\nprompt > ");
