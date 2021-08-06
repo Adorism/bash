@@ -1,8 +1,8 @@
 process.stdout.write("prompt >");
-
+let cmd;
 process.stdin.on("data", (data) => {
     const cmd = data.toString().trim();
-)}
+})
 
 
 
