@@ -5,6 +5,6 @@ module.export = fs.readdir("./", "utf8", function (err, file) {
     throw err;
   } else {
     process.stdout.write(file.join("\n"));
-    process.stdout.write("promt > ");
+    process.stdout.write("prompt > ");
   }
 });
